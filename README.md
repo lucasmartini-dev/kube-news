@@ -67,6 +67,11 @@ Para configurar a aplicação, defina as seguintes variáveis de ambiente:
 
 ## 🚀 Instalação e Execução
 
+### Containerização
+```bash
+docker container run -d -p 5432:5432 -e POSTGRES_DB=kubedevnews -e POSTGRES_USER=kubedevnews -e POSTGRES_PASSWORD=Pg#123 -v kubedevnews_vol:/var/lib/postgresql/data postgres:14.10
+```
+
 ### Execução Local
 
 1. Clone o repositório
